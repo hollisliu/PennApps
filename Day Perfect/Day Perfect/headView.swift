@@ -10,14 +10,13 @@ import UIKit
 
 @IBDesignable
 class headView: UIView {
-    var progress = 0.0
+    var progress = 0.0{didSet{animate()}}
 
     let goalLayer = CAShapeLayer()
     let drankLayer = CAShapeLayer()
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         
         setHead()
         goalLayer.strokeColor = UIColor.greenColor().CGColor
@@ -43,7 +42,7 @@ class headView: UIView {
         // Setup fg
         drankLayer.lineWidth = CGFloat(50.0)
         drankLayer.fillColor = UIColor.clearColor().CGColor
-        drankLayer.strokeEnd = 0.87
+        drankLayer.strokeEnd = 0.3
         layer.addSublayer(drankLayer)
     }
     
@@ -65,6 +64,22 @@ class headView: UIView {
         let path = UIBezierPath(arcCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: false)
         shapeLayer.path = path.CGPath
         
+    }
+    
+    func animate(){
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.fromValue = 0.3
+        animation.toValue = 0.8
+
+        animation.duration = CFTimeInterval(2)
+
+        drankLayer.removeAnimationForKey("stroke")
+        drankLayer.addAnimation(animation, forKey: "stroke")
+        
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        drankLayer.strokeEnd = 0.8
+        CATransaction.commit()
     }
     
 }

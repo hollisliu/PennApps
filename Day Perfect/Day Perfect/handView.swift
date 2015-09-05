@@ -19,7 +19,6 @@ class handView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        
         setHead()
         goalLayer.strokeColor = UIColor.greenColor().CGColor
         drankLayer.strokeColor = UIColor.blueColor().CGColor
@@ -27,7 +26,6 @@ class handView: UIView {
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
-        
         
         setHead()
         goalLayer.strokeColor = UIColor.greenColor().CGColor
@@ -44,7 +42,7 @@ class handView: UIView {
         // Setup fg
         drankLayer.lineWidth = CGFloat(50.0)
         drankLayer.fillColor = UIColor.clearColor().CGColor
-        drankLayer.strokeEnd = 0.87
+        drankLayer.strokeEnd = CGFloat(progress)
         layer.addSublayer(drankLayer)
     }
     

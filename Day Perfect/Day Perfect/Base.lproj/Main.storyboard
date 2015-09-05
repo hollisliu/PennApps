@@ -44,6 +44,9 @@
                             <constraint firstItem="hf6-fs-DTk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="HNY-Qy-ZJv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headValue" destination="hf6-fs-DTk" id="gLZ-Wn-Rbb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
