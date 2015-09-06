@@ -26,8 +26,8 @@ class LegView: UIView {
         
         self.backgroundColor = UIColor.clearColor()
         setHead()
-        goalLayer.strokeColor = UIColor.greenColor().CGColor
-        drankLayer.strokeColor = UIColor.blueColor().CGColor
+        goalLayer.strokeColor = UIColor(red: 0.56, green: 0.21, blue: 0.04, alpha: 1).CGColor
+        drankLayer.strokeColor = UIColor.orangeColor().CGColor
     }
     
     override func prepareForInterfaceBuilder() {
@@ -70,7 +70,7 @@ class LegView: UIView {
     }
     
     func animate(){
-        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        let animation = CASpringAnimation(keyPath: "strokeEnd")
         animation.fromValue = oldValue
         animation.toValue = progress
         

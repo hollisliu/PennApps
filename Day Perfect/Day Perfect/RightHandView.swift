@@ -26,16 +26,16 @@ class RightHandView: UIView {
         
         self.backgroundColor = UIColor.clearColor()
         setHead()
-        goalLayer.strokeColor = UIColor.greenColor().CGColor
-        drankLayer.strokeColor = UIColor.blueColor().CGColor
+        goalLayer.strokeColor = UIColor.blueColor().CGColor
+        drankLayer.strokeColor = UIColor.greenColor().CGColor
     }
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         
         setHead()
-        goalLayer.strokeColor = UIColor.greenColor().CGColor
-        drankLayer.strokeColor = UIColor.blueColor().CGColor
+        goalLayer.strokeColor = UIColor.blueColor().CGColor
+        drankLayer.strokeColor = UIColor.greenColor().CGColor
     }
     
     func setHead(){
@@ -70,7 +70,7 @@ class RightHandView: UIView {
     }
     
     func animate(){
-        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        let animation = CASpringAnimation(keyPath: "strokeEnd")
         animation.fromValue = oldValue
         animation.toValue = progress
         

@@ -23,6 +23,7 @@
 		CB9DA4B01B9BD82900135114 /* RightHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9DA4AF1B9BD82900135114 /* RightHandView.swift */; settings = {ASSET_TAGS = (); }; };
 		CB9DA4B21B9BDD0F00135114 /* LegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9DA4B11B9BDD0F00135114 /* LegView.swift */; settings = {ASSET_TAGS = (); }; };
 		CB9DA4B41B9BDD2D00135114 /* RightLegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9DA4B31B9BDD2D00135114 /* RightLegView.swift */; settings = {ASSET_TAGS = (); }; };
+		CB9DA4B61B9C166700135114 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9DA4B51B9C166700135114 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CBFE56D51B9B8E3E004A956B /* IoTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFE56D41B9B8E3E004A956B /* IoTManager.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		CB9DA4AF1B9BD82900135114 /* RightHandView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightHandView.swift; sourceTree = "<group>"; };
 		CB9DA4B11B9BDD0F00135114 /* LegView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegView.swift; sourceTree = "<group>"; };
 		CB9DA4B31B9BDD2D00135114 /* RightLegView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightLegView.swift; sourceTree = "<group>"; };
+		CB9DA4B51B9C166700135114 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CBFE56D41B9B8E3E004A956B /* IoTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IoTManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +169,7 @@
 				CB09502F1B9AD70700F3DB8C /* AppDelegate.swift */,
 				CB09505D1B9AD8F400F3DB8C /* Day.swift */,
 				CB0950311B9AD70700F3DB8C /* HomeViewController.swift */,
+				CB9DA4B51B9C166700135114 /* DetailViewController.swift */,
 				CB0950331B9AD70700F3DB8C /* Main.storyboard */,
 				CBFE56D41B9B8E3E004A956B /* IoTManager.swift */,
 				CB0950651B9B4E6F00F3DB8C /* Views */,
@@ -343,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9DA4B61B9C166700135114 /* DetailViewController.swift in Sources */,
 				CBFE56D51B9B8E3E004A956B /* IoTManager.swift in Sources */,
 				CB0950621B9B248000F3DB8C /* headView.swift in Sources */,
 				CB9DA4B01B9BD82900135114 /* RightHandView.swift in Sources */,

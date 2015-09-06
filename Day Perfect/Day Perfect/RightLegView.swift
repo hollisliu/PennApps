@@ -26,16 +26,16 @@ class RightLegView: UIView {
         
         self.backgroundColor = UIColor.clearColor()
         setHead()
-        goalLayer.strokeColor = UIColor.greenColor().CGColor
-        drankLayer.strokeColor = UIColor.blueColor().CGColor
+        goalLayer.strokeColor = UIColor(red: 0.57, green: 0, blue: 0.19, alpha: 1).CGColor
+        drankLayer.strokeColor = UIColor(red: 1, green: 0.34, blue: 0.56, alpha: 1).CGColor
     }
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         
         setHead()
-        goalLayer.strokeColor = UIColor.greenColor().CGColor
-        drankLayer.strokeColor = UIColor.blueColor().CGColor
+        goalLayer.strokeColor = UIColor(red: 0.49, green: 0.02, blue: 0.09, alpha: 1).CGColor
+        drankLayer.strokeColor = UIColor(red: 0.94, green: 0.03, blue: 0.48, alpha: 1).CGColor
     }
     
     func setHead(){
@@ -70,7 +70,7 @@ class RightLegView: UIView {
     }
 
     func animate(){
-        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        let animation = CASpringAnimation(keyPath: "strokeEnd")
         animation.fromValue = oldValue
         animation.toValue = progress
         

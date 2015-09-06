@@ -26,16 +26,16 @@ class handView: UIView {
         
         self.backgroundColor = UIColor.clearColor()
         setHead()
-        goalLayer.strokeColor = UIColor.greenColor().CGColor
-        drankLayer.strokeColor = UIColor.blueColor().CGColor
+        goalLayer.strokeColor = UIColor(red: 0.65, green: 0.62, blue: 0.75, alpha: 1).CGColor
+        drankLayer.strokeColor = UIColor(red: 0.33, green: 0.24, blue: 0.75, alpha: 1).CGColor
     }
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         
         setHead()
-        goalLayer.strokeColor = UIColor.greenColor().CGColor
-        drankLayer.strokeColor = UIColor.blueColor().CGColor
+        goalLayer.strokeColor = UIColor(red: 0.65, green: 0.62, blue: 0.75, alpha: 1).CGColor
+        drankLayer.strokeColor = UIColor(red: 0.33, green: 0.24, blue: 0.75, alpha: 1).CGColor
     }
     
     func setHead(){
@@ -70,7 +70,7 @@ class handView: UIView {
     }
     
     func animate(){
-        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        let animation = CASpringAnimation(keyPath: "strokeEnd")
         animation.fromValue = oldValue
         animation.toValue = progress
         

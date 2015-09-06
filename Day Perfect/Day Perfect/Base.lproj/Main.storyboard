@@ -19,23 +19,60 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xso-vg-ZPo" customClass="headView" customModule="Day_Perfect" customModuleProvider="target">
                                 <rect key="frame" x="210" y="94" width="180" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtD-O3-MPu" userLabel="h">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <animations/>
+                                        <connections>
+                                            <action selector="headIncrese:" destination="iaz-P5-bRK" eventType="touchUpInside" id="ewM-us-mxb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
                                 <constraints>
+                                    <constraint firstItem="WtD-O3-MPu" firstAttribute="leading" secondItem="xso-vg-ZPo" secondAttribute="leading" id="3i6-l6-XRB"/>
                                     <constraint firstAttribute="width" constant="180" id="3tR-HY-9qy"/>
+                                    <constraint firstAttribute="bottom" secondItem="WtD-O3-MPu" secondAttribute="bottom" id="5yu-Mj-I2q"/>
+                                    <constraint firstItem="WtD-O3-MPu" firstAttribute="top" secondItem="xso-vg-ZPo" secondAttribute="top" id="c9W-Ce-wvb"/>
                                     <constraint firstAttribute="height" constant="180" id="mAx-Hd-4xA"/>
+                                    <constraint firstAttribute="trailing" secondItem="WtD-O3-MPu" secondAttribute="trailing" id="wgm-v3-36m"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zjb-qf-tP7" customClass="handView" customModule="Day_Perfect" customModuleProvider="target">
                                 <rect key="frame" x="20" y="184" width="150" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogZ-qa-31R" userLabel="LH">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                                        <animations/>
+                                        <connections>
+                                            <action selector="getDetail:" destination="iaz-P5-bRK" eventType="touchUpInside" id="zKW-0m-ZE8"/>
+                                            <segue destination="GOd-5h-TMm" kind="show" id="QnZ-7Q-LGJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="ogZ-qa-31R" firstAttribute="leading" secondItem="Zjb-qf-tP7" secondAttribute="leading" id="6HF-hw-zAY"/>
                                     <constraint firstAttribute="height" constant="180" id="8Fj-bg-qoW"/>
+                                    <constraint firstItem="ogZ-qa-31R" firstAttribute="top" secondItem="Zjb-qf-tP7" secondAttribute="top" id="Fqd-6K-NB8"/>
                                     <constraint firstAttribute="width" constant="150" id="Gri-aU-omU"/>
+                                    <constraint firstAttribute="trailing" secondItem="ogZ-qa-31R" secondAttribute="trailing" id="eaZ-CU-gGr"/>
+                                    <constraint firstAttribute="bottom" secondItem="ogZ-qa-31R" secondAttribute="bottom" id="fE8-bQ-UvV"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18Q-1T-gcO" customClass="RightHandView" customModule="Day_Perfect" customModuleProvider="target">
                                 <rect key="frame" x="430" y="184" width="150" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgL-L0-bNV" userLabel="RH">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                                        <animations/>
+                                        <connections>
+                                            <action selector="getDetail:" destination="iaz-P5-bRK" eventType="touchUpInside" id="2mO-VY-9hd"/>
+                                            <segue destination="GOd-5h-TMm" kind="show" id="WVd-JC-Qso"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -45,17 +82,47 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hV2-LG-hhl" customClass="LegView" customModule="Day_Perfect" customModuleProvider="target">
                                 <rect key="frame" x="38" y="327" width="120" height="265"/>
+                                <subviews>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0M-Le-4Q2" userLabel="LL">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="265"/>
+                                        <animations/>
+                                        <connections>
+                                            <action selector="getDetail:" destination="iaz-P5-bRK" eventType="touchUpInside" id="hha-VE-43h"/>
+                                            <segue destination="GOd-5h-TMm" kind="show" id="7Lo-4u-PKO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="H0M-Le-4Q2" secondAttribute="trailing" id="Qzc-UA-mTr"/>
                                     <constraint firstAttribute="width" constant="120" id="awf-27-Qy0"/>
                                     <constraint firstAttribute="height" constant="265" id="eIK-hA-pCc"/>
+                                    <constraint firstItem="H0M-Le-4Q2" firstAttribute="top" secondItem="hV2-LG-hhl" secondAttribute="top" id="xZf-nG-etC"/>
+                                    <constraint firstAttribute="bottom" secondItem="H0M-Le-4Q2" secondAttribute="bottom" id="yTS-KL-pgz"/>
+                                    <constraint firstItem="H0M-Le-4Q2" firstAttribute="leading" secondItem="hV2-LG-hhl" secondAttribute="leading" id="zed-hO-mcd"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woJ-EL-0iu" customClass="RightLegView" customModule="Day_Perfect" customModuleProvider="target">
                                 <rect key="frame" x="442" y="327" width="120" height="265"/>
+                                <subviews>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR8-q0-ZoG" userLabel="RL">
+                                        <rect key="frame" x="8" y="8" width="104" height="249"/>
+                                        <animations/>
+                                        <connections>
+                                            <action selector="getDetail:" destination="iaz-P5-bRK" eventType="touchUpInside" id="Teb-Tf-CuY"/>
+                                            <segue destination="GOd-5h-TMm" kind="show" id="iNz-lV-TuZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="rR8-q0-ZoG" firstAttribute="leading" secondItem="woJ-EL-0iu" secondAttribute="leadingMargin" id="MZk-Yv-44H"/>
+                                    <constraint firstItem="rR8-q0-ZoG" firstAttribute="trailing" secondItem="woJ-EL-0iu" secondAttribute="trailingMargin" id="afE-ae-yPP"/>
+                                    <constraint firstItem="rR8-q0-ZoG" firstAttribute="top" secondItem="woJ-EL-0iu" secondAttribute="topMargin" id="lck-0E-87b"/>
+                                    <constraint firstItem="rR8-q0-ZoG" firstAttribute="bottom" secondItem="woJ-EL-0iu" secondAttribute="bottomMargin" id="tVr-rs-F0N"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
@@ -96,17 +163,16 @@
                         <outlet property="leftLeg" destination="hV2-LG-hhl" id="9Nb-HW-yLd"/>
                         <outlet property="rightHand" destination="18Q-1T-gcO" id="d5i-3g-JMN"/>
                         <outlet property="rightLeg" destination="woJ-EL-0iu" id="ooi-3f-QG3"/>
-                        <segue destination="GOd-5h-TMm" kind="show" id="qXV-pB-EnU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e41-Wj-kwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1295" y="293"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="CD9-tK-NLb">
             <objects>
-                <viewController id="GOd-5h-TMm" sceneMemberID="viewController">
+                <viewController id="GOd-5h-TMm" customClass="DetailViewController" customModule="Day_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sds-3f-d2S"/>
                         <viewControllerLayoutGuide type="bottom" id="FZE-vM-XbL"/>
@@ -115,25 +181,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2Q-iR-23G">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2Q-iR-23G">
                                 <rect key="frame" x="20" y="64" width="116" height="53.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="45"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxP-Ub-eaC">
                                 <rect key="frame" x="20" y="124.5" width="86.5" height="41"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtG-zV-EtZ">
-                                <rect key="frame" x="20" y="173" width="552" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comments" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtG-zV-EtZ">
+                                <rect key="frame" x="20" y="173" width="552" height="23.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -144,11 +210,17 @@
                             <constraint firstAttribute="leadingMargin" secondItem="UxP-Ub-eaC" secondAttribute="leading" id="GI5-y0-E9x"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WtG-zV-EtZ" secondAttribute="trailing" constant="8" id="IMh-fg-CTs"/>
                             <constraint firstAttribute="leadingMargin" secondItem="WtG-zV-EtZ" secondAttribute="leading" id="K5f-zF-AGn"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="d2Q-iR-23G" secondAttribute="trailing" constant="8" id="V8w-TS-yy0"/>
                             <constraint firstItem="d2Q-iR-23G" firstAttribute="top" secondItem="Sds-3f-d2S" secondAttribute="bottom" id="ZgV-xx-HYC"/>
                             <constraint firstItem="UxP-Ub-eaC" firstAttribute="top" secondItem="d2Q-iR-23G" secondAttribute="bottom" constant="7.5" id="rpb-Rp-UPh"/>
                             <constraint firstAttribute="leadingMargin" secondItem="d2Q-iR-23G" secondAttribute="leading" id="vTJ-xD-pq9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="comments" destination="WtG-zV-EtZ" id="3Wj-tD-PAR"/>
+                        <outlet property="score" destination="UxP-Ub-eaC" id="B70-0N-Zzn"/>
+                        <outlet property="titleName" destination="d2Q-iR-23G" id="egE-Pz-TCy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1F0-I0-Dxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,4 +246,7 @@
             <point key="canvasLocation" x="483" y="293"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="iNz-lV-TuZ"/>
+    </inferredMetricsTieBreakers>
 </document>

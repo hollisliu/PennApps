@@ -26,16 +26,16 @@ class headView: UIView {
                 
         self.backgroundColor = UIColor.clearColor()
         setHead()
-        goalLayer.strokeColor = UIColor.greenColor().CGColor
-        drankLayer.strokeColor = UIColor.blueColor().CGColor
+        goalLayer.strokeColor = UIColor(red: 0, green: 0.3, blue: 0.59, alpha: 1).CGColor
+        drankLayer.strokeColor = UIColor(red: 0.04, green: 0.950, blue: 0.91, alpha: 1).CGColor
     }
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
 
         setHead()
-        goalLayer.strokeColor = UIColor.greenColor().CGColor
-        drankLayer.strokeColor = UIColor.blueColor().CGColor
+        goalLayer.strokeColor = UIColor(red: 0.1, green: 0.64, blue: 0.89, alpha: 1).CGColor
+        drankLayer.strokeColor = UIColor(red: 0.04, green: 0.950, blue: 0.91, alpha: 1).CGColor
     }
 
     func setHead(){
@@ -48,7 +48,7 @@ class headView: UIView {
         // Setup fg
         drankLayer.lineWidth = CGFloat(20.0)
         drankLayer.fillColor = UIColor.clearColor().CGColor
-        drankLayer.strokeEnd = 0.3
+        drankLayer.strokeEnd = CGFloat(progress)
         layer.addSublayer(drankLayer)
     }
     
@@ -73,10 +73,9 @@ class headView: UIView {
     }
     
     func animate(){
-        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        let animation = CASpringAnimation(keyPath: "strokeEnd")
         animation.fromValue = oldValue
         animation.toValue = progress
-
         animation.duration = CFTimeInterval(2)
 
         drankLayer.removeAnimationForKey("stroke")
