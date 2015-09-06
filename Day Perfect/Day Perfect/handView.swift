@@ -11,7 +11,12 @@ import UIKit
 @IBDesignable
 class handView: UIView {
     
-    var progress = 0.0
+    var oldValue = 0.0
+    var progress = 0.0{
+        didSet{
+            animate()
+            self.oldValue = progress
+        }}
     
     let goalLayer = CAShapeLayer()
     let drankLayer = CAShapeLayer()
@@ -19,6 +24,7 @@ class handView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.backgroundColor = UIColor.clearColor()
         setHead()
         goalLayer.strokeColor = UIColor.greenColor().CGColor
         drankLayer.strokeColor = UIColor.blueColor().CGColor
@@ -34,13 +40,13 @@ class handView: UIView {
     
     func setHead(){
         // Setup bg
-        goalLayer.lineWidth = CGFloat(50.0)
+        goalLayer.lineWidth = CGFloat(15.0)
         goalLayer.fillColor = UIColor.clearColor().CGColor
         goalLayer.strokeEnd = 1
         layer.addSublayer(goalLayer)
         
         // Setup fg
-        drankLayer.lineWidth = CGFloat(50.0)
+        drankLayer.lineWidth = CGFloat(15.0)
         drankLayer.fillColor = UIColor.clearColor().CGColor
         drankLayer.strokeEnd = CGFloat(progress)
         layer.addSublayer(drankLayer)
@@ -57,10 +63,26 @@ class handView: UIView {
         shapeLayer.frame = self.bounds
         
         let path = UIBezierPath()
-        path.moveToPoint(self.bounds.origin)
-        path.addLineToPoint(CGPoint(x: self.bounds.maxX, y: self.bounds.maxY))
+        path.moveToPoint(CGPoint(x: self.layer.bounds.maxX, y: self.layer.bounds.maxY))
+        path.addLineToPoint(self.layer.bounds.origin)
         shapeLayer.path = path.CGPath
         
+    }
+    
+    func animate(){
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.fromValue = oldValue
+        animation.toValue = progress
+        
+        animation.duration = CFTimeInterval(2)
+        
+        drankLayer.removeAnimationForKey("stroke")
+        drankLayer.addAnimation(animation, forKey: "stroke")
+        
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        drankLayer.strokeEnd = CGFloat(progress)
+        CATransaction.commit()
     }
 
 

@@ -1,5 +1,5 @@
 //
-//  headView.swift
+//  RightLegView.swift
 //  Day Perfect
 //
 //  Created by Hanjie Liu on 9/5/15.
@@ -9,21 +9,21 @@
 import UIKit
 
 @IBDesignable
-class headView: UIView {
-    
+class RightLegView: UIView {
+
     var oldValue = 0.0
     var progress = 0.0{
         didSet{
             animate()
             self.oldValue = progress
         }}
-
+    
     let goalLayer = CAShapeLayer()
     let drankLayer = CAShapeLayer()
     
     override func awakeFromNib() {
         super.awakeFromNib()
-                
+        
         self.backgroundColor = UIColor.clearColor()
         setHead()
         goalLayer.strokeColor = UIColor.greenColor().CGColor
@@ -32,12 +32,12 @@ class headView: UIView {
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
-
+        
         setHead()
         goalLayer.strokeColor = UIColor.greenColor().CGColor
         drankLayer.strokeColor = UIColor.blueColor().CGColor
     }
-
+    
     func setHead(){
         // Setup bg
         goalLayer.lineWidth = CGFloat(20.0)
@@ -48,7 +48,7 @@ class headView: UIView {
         // Setup fg
         drankLayer.lineWidth = CGFloat(20.0)
         drankLayer.fillColor = UIColor.clearColor().CGColor
-        drankLayer.strokeEnd = 0.3
+        drankLayer.strokeEnd = CGFloat(progress)
         layer.addSublayer(drankLayer)
     }
     
@@ -62,23 +62,20 @@ class headView: UIView {
         
         shapeLayer.frame = self.bounds
         
-        let center = CGPoint(x: drankLayer.bounds.midX, y: drankLayer.bounds.midY)
-        let radius = CGFloat(CGRectGetWidth(self.bounds) * 0.5)
-        let startAngle = 60.0 * CGFloat(M_PI) / 180.0
-        let endAngle = 120.0 * CGFloat(M_PI) / 180.0
-        
-        let path = UIBezierPath(arcCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: false)
+        let path = UIBezierPath()
+        path.moveToPoint(CGPoint(x: self.layer.bounds.minX, y: self.layer.bounds.minY))
+        path.addLineToPoint(CGPoint(x: self.layer.bounds.maxX, y: self.layer.bounds.maxY))
         shapeLayer.path = path.CGPath
         
     }
-    
+
     func animate(){
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.fromValue = oldValue
         animation.toValue = progress
-
+        
         animation.duration = CFTimeInterval(2)
-
+        
         drankLayer.removeAnimationForKey("stroke")
         drankLayer.addAnimation(animation, forKey: "stroke")
         
@@ -87,5 +84,5 @@ class headView: UIView {
         drankLayer.strokeEnd = CGFloat(progress)
         CATransaction.commit()
     }
-    
+
 }

@@ -19,6 +19,11 @@
 		CB0950641B9B3D4A00F3DB8C /* handView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0950631B9B3D4A00F3DB8C /* handView.swift */; settings = {ASSET_TAGS = (); }; };
 		CB0950671B9B5FB800F3DB8C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0950661B9B5FB800F3DB8C /* HealthKit.framework */; };
 		CB09506A1B9B602C00F3DB8C /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0950691B9B602C00F3DB8C /* HealthManager.swift */; settings = {ASSET_TAGS = (); }; };
+		CB9DA4981B9BACC100135114 /* libIoTKitLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9DA4971B9BACC100135114 /* libIoTKitLib.a */; settings = {ASSET_TAGS = (); }; };
+		CB9DA4B01B9BD82900135114 /* RightHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9DA4AF1B9BD82900135114 /* RightHandView.swift */; settings = {ASSET_TAGS = (); }; };
+		CB9DA4B21B9BDD0F00135114 /* LegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9DA4B11B9BDD0F00135114 /* LegView.swift */; settings = {ASSET_TAGS = (); }; };
+		CB9DA4B41B9BDD2D00135114 /* RightLegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9DA4B31B9BDD2D00135114 /* RightLegView.swift */; settings = {ASSET_TAGS = (); }; };
+		CBFE56D51B9B8E3E004A956B /* IoTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFE56D41B9B8E3E004A956B /* IoTManager.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,31 @@
 		CB0950661B9B5FB800F3DB8C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		CB0950681B9B5FB800F3DB8C /* Day Perfect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Day Perfect.entitlements"; sourceTree = "<group>"; };
 		CB0950691B9B602C00F3DB8C /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		CB9DA4971B9BACC100135114 /* libIoTKitLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIoTKitLib.a; sourceTree = "<group>"; };
+		CB9DA4991B9BACCB00135114 /* AccountManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountManagement.h; sourceTree = "<group>"; };
+		CB9DA49A1B9BACCB00135114 /* AdvancedDataInquiry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedDataInquiry.h; sourceTree = "<group>"; };
+		CB9DA49B1B9BACCB00135114 /* AggregatedReportInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AggregatedReportInterface.h; sourceTree = "<group>"; };
+		CB9DA49C1B9BACCB00135114 /* AlertManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertManagement.h; sourceTree = "<group>"; };
+		CB9DA49D1B9BACCB00135114 /* AuthorizationManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationManagement.h; sourceTree = "<group>"; };
+		CB9DA49E1B9BACCB00135114 /* ComponentCatalogManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentCatalogManagement.h; sourceTree = "<group>"; };
+		CB9DA49F1B9BACCB00135114 /* DataManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManagement.h; sourceTree = "<group>"; };
+		CB9DA4A01B9BACCB00135114 /* DefaultConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultConfiguration.h; sourceTree = "<group>"; };
+		CB9DA4A11B9BACCB00135114 /* DeviceManagament.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceManagament.h; sourceTree = "<group>"; };
+		CB9DA4A21B9BACCB00135114 /* HttpRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpRequestOperation.h; sourceTree = "<group>"; };
+		CB9DA4A31B9BACCB00135114 /* HttpResponseDelegatee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpResponseDelegatee.h; sourceTree = "<group>"; };
+		CB9DA4A41B9BACCB00135114 /* HttpResponseDelegateHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpResponseDelegateHandler.h; sourceTree = "<group>"; };
+		CB9DA4A51B9BACCB00135114 /* HttpResponseMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpResponseMacros.h; sourceTree = "<group>"; };
+		CB9DA4A61B9BACCB00135114 /* HttpUrlBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpUrlBuilder.h; sourceTree = "<group>"; };
+		CB9DA4A71B9BACCB00135114 /* InvitationManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvitationManagement.h; sourceTree = "<group>"; };
+		CB9DA4A81B9BACCB00135114 /* RuleManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuleManagement.h; sourceTree = "<group>"; };
+		CB9DA4A91B9BACCB00135114 /* UserManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserManagement.h; sourceTree = "<group>"; };
+		CB9DA4AA1B9BACEF00135114 /* DayPerfect-Bridging-Heading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DayPerfect-Bridging-Heading.h"; sourceTree = "<group>"; };
+		CB9DA4AB1B9BAD5100135114 /* CloudResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CloudResponse.h; path = "Day Perfect/IoTKitLib/IoTKitLib/http/CloudResponse.h"; sourceTree = "<group>"; };
+		CB9DA4AC1B9BAD5D00135114 /* AttributeFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AttributeFilter.h; path = "Day Perfect/IoTKitLib/IoTKitLib/models/AttributeFilter.h"; sourceTree = "<group>"; };
+		CB9DA4AF1B9BD82900135114 /* RightHandView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightHandView.swift; sourceTree = "<group>"; };
+		CB9DA4B11B9BDD0F00135114 /* LegView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegView.swift; sourceTree = "<group>"; };
+		CB9DA4B31B9BDD2D00135114 /* RightLegView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightLegView.swift; sourceTree = "<group>"; };
+		CBFE56D41B9B8E3E004A956B /* IoTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IoTManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB0950671B9B5FB800F3DB8C /* HealthKit.framework in Frameworks */,
+				CB9DA4981B9BACC100135114 /* libIoTKitLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +122,27 @@
 			children = (
 				CB0950661B9B5FB800F3DB8C /* HealthKit.framework */,
 				CB09502E1B9AD70700F3DB8C /* Day Perfect */,
+				CB9DA4AA1B9BACEF00135114 /* DayPerfect-Bridging-Heading.h */,
+				CB9DA4971B9BACC100135114 /* libIoTKitLib.a */,
+				CB9DA4991B9BACCB00135114 /* AccountManagement.h */,
+				CB9DA4AC1B9BAD5D00135114 /* AttributeFilter.h */,
+				CB9DA49A1B9BACCB00135114 /* AdvancedDataInquiry.h */,
+				CB9DA49B1B9BACCB00135114 /* AggregatedReportInterface.h */,
+				CB9DA49C1B9BACCB00135114 /* AlertManagement.h */,
+				CB9DA49D1B9BACCB00135114 /* AuthorizationManagement.h */,
+				CB9DA4AB1B9BAD5100135114 /* CloudResponse.h */,
+				CB9DA49E1B9BACCB00135114 /* ComponentCatalogManagement.h */,
+				CB9DA49F1B9BACCB00135114 /* DataManagement.h */,
+				CB9DA4A01B9BACCB00135114 /* DefaultConfiguration.h */,
+				CB9DA4A11B9BACCB00135114 /* DeviceManagament.h */,
+				CB9DA4A21B9BACCB00135114 /* HttpRequestOperation.h */,
+				CB9DA4A31B9BACCB00135114 /* HttpResponseDelegatee.h */,
+				CB9DA4A41B9BACCB00135114 /* HttpResponseDelegateHandler.h */,
+				CB9DA4A51B9BACCB00135114 /* HttpResponseMacros.h */,
+				CB9DA4A61B9BACCB00135114 /* HttpUrlBuilder.h */,
+				CB9DA4A71B9BACCB00135114 /* InvitationManagement.h */,
+				CB9DA4A81B9BACCB00135114 /* RuleManagement.h */,
+				CB9DA4A91B9BACCB00135114 /* UserManagement.h */,
 				CB0950431B9AD70700F3DB8C /* Day PerfectTests */,
 				CB09504E1B9AD70700F3DB8C /* Day PerfectUITests */,
 				CB09502D1B9AD70700F3DB8C /* Products */,
@@ -116,6 +168,7 @@
 				CB09505D1B9AD8F400F3DB8C /* Day.swift */,
 				CB0950311B9AD70700F3DB8C /* HomeViewController.swift */,
 				CB0950331B9AD70700F3DB8C /* Main.storyboard */,
+				CBFE56D41B9B8E3E004A956B /* IoTManager.swift */,
 				CB0950651B9B4E6F00F3DB8C /* Views */,
 				CB0950361B9AD70700F3DB8C /* Assets.xcassets */,
 				CB0950381B9AD70700F3DB8C /* LaunchScreen.storyboard */,
@@ -145,8 +198,11 @@
 		CB0950651B9B4E6F00F3DB8C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CB0950631B9B3D4A00F3DB8C /* handView.swift */,
 				CB0950611B9B248000F3DB8C /* headView.swift */,
+				CB0950631B9B3D4A00F3DB8C /* handView.swift */,
+				CB9DA4AF1B9BD82900135114 /* RightHandView.swift */,
+				CB9DA4B11B9BDD0F00135114 /* LegView.swift */,
+				CB9DA4B31B9BDD2D00135114 /* RightLegView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -287,12 +343,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBFE56D51B9B8E3E004A956B /* IoTManager.swift in Sources */,
 				CB0950621B9B248000F3DB8C /* headView.swift in Sources */,
+				CB9DA4B01B9BD82900135114 /* RightHandView.swift in Sources */,
 				CB09506A1B9B602C00F3DB8C /* HealthManager.swift in Sources */,
 				CB0950321B9AD70700F3DB8C /* HomeViewController.swift in Sources */,
 				CB0950301B9AD70700F3DB8C /* AppDelegate.swift in Sources */,
 				CB0950641B9B3D4A00F3DB8C /* handView.swift in Sources */,
 				CB09505E1B9AD8F400F3DB8C /* Day.swift in Sources */,
+				CB9DA4B41B9BDD2D00135114 /* RightLegView.swift in Sources */,
+				CB9DA4B21B9BDD0F00135114 /* LegView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,9 +500,14 @@
 				INFOPLIST_FILE = "Day Perfect/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.hollisliu.Day-Perfect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Hollis/Desktop/PennAppsHollis/Day Perfect/DayPerfect-Bridging-Heading.h";
 			};
 			name = Debug;
 		};
@@ -456,9 +521,14 @@
 				INFOPLIST_FILE = "Day Perfect/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.hollisliu.Day-Perfect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Hollis/Desktop/PennAppsHollis/Day Perfect/DayPerfect-Bridging-Heading.h";
 			};
 			name = Release;
 		};
